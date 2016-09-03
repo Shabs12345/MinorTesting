@@ -1,0 +1,491 @@
+<!--
+Author: JTeam
+Author URL: JTeam Corporation
+License: Open Source
+License URL: Open Source Corporation
+-->
+{% load static %}
+{% if error == 1 %}
+  <div class="alert alert-success" role="alert" id="success-alert">
+    <strong>Well Done!</strong> Your Message is Sent
+  </div>
+{% else %}
+{% endif %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Here we Provide the best browser of your choice:JBrowser</title>
+	<!--for-mobile-apps-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Furniture Mart Responsive Website Template, Web Templates, Flat Web Templates, Android Compatible web template,
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--//for-mobile-apps-->
+
+     			<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <script src="{% static "js/jquery-2.1.4.min.js" %}"></script>
+ 		<script src="{% static "js/bootstrap.min.js" %}">		</script>
+    	<link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css" media="all">
+			<script src="{% static "js/modernizr.custom.js" %}"></script>
+
+	<!-- JS for EasyResponsive tab -->
+	<script src="{% static "js/easyResponsiveTabs.js" %}" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+			type: 'default', //Types: default, vertical, accordion
+			width: 'auto', //auto or any width like 600px
+			fit: true   // 100% fit in a container
+			});
+			});
+		</script>
+
+	<!-- Start-Smooth-Scrolling -->
+	<script type="text/javascript" src="{% static "js/move-top.js" %}"></script>
+	<script type="text/javascript" src="{% static "js/easing.js" %}"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},2000);
+            });
+			});
+		</script>
+	<!-- //End-Smooth-Scrolling -->
+
+	<!--JS for animate-->
+	<link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css" media="all">
+	<script src="{% static "js/wow.min.js" %}"></script>
+		<script>
+			new WOW().init();
+		</script>
+	<!--//end-animate-->
+
+</head>
+
+<body>
+
+<div class="header" id="home">
+
+	<div class="menu">
+		<nav class="navbar navbar-default ">
+			<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home" class="active scroll wow fadeInDownBig" data-wow-delay=".1s">Home</a></li>
+						<li><a href="#new" class="scroll wow fadeInDownBig" data-wow-delay=".3s">New</a></li>
+						<li><a href="#about" class="scroll wow fadeInDownBig" data-wow-delay=".5s">About Us</a></li>
+						<li><a href="#catalogue" class="scroll wow fadeInDownBig" data-wow-delay=".7s">Catalogue</a></li>
+						<li><a href="#contact" class="scroll wow fadeInDownBig" data-wow-delay=".9s">Contact</a></li>
+					</ul>
+				</div><!-- navbar-collapse -->
+
+				<div class="header-content">
+					<h1 class="wow bounceIn" data-wow-delay="0.50s"> JBrowser </h1>
+					<h2 class="wow fadeInUp" data-wow-delay="0.90s"> Best Browser Meets Here </h2>
+				</div> <!-- Header Content Ends Here -->
+				  <div class="clearfix"> </div>
+			</div><!-- container -->
+		</nav>
+	</div> <!-- Menu Ends -->
+
+</div> <!-- Header Ends -->
+
+
+<div class="icon-info">
+	<div class="container">
+
+		<div class="col-md-4 icon">
+			<div class="info">
+				<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a ">
+					<a href="#set-1" class="hi-icon hi-icon-sofa"> </a>
+				</div>
+
+				<p class="wow pulse">	Incognito browsing lead you the better experience of private browsing. Here your History,Cookis,Password will not be saved.Thus more fun...
+				</p>
+			</div>
+		</div>
+
+		<div class="col-md-4 icon">
+			<div class="info">
+				<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a ">
+					<a href="#set-1" class="hi-icon hi-icon-rack"> </a>
+				</div>
+
+				<p class="wow pulse">	A tab can help you separate multiple pages in one window. If you're using Firefox or Chrome, this feature is available from the get go.Right-click a link and click on Open in New Tab..
+				</p>
+			</div>
+		</div>
+
+		<div class="col-md-4 icon">
+			<div class="info">
+				<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a ">
+					<a href="#set-1" class="hi-icon hi-icon-bed"> </a>
+				</div>
+
+				<p class="wow pulse">	There are Variety of Themes to Choose from. Just Go to the menu and click on Theme Button and Select The Best Theme according to your Mood.Be colorful..
+				</p>
+			</div>
+		</div>
+
+	  <div class="clearfix"> </div>
+	</div>
+</div> <!-- icon-info -->
+
+
+<div class="new-arrivals" >
+  <div class="container">
+	<div class="padding-new" id="new">
+
+		<h3> Whats-New</h3>
+
+		<div class="new-content">
+
+			<div class="new-up">
+
+				<div class="col-md-6 new-res">
+					<div class="col-md-6 new-i wow fadeInLeft animated" data-wow-delay=".5s">
+						<div class="new-image hovereffect">
+							<img src="./images/images.jpe" alt="image">
+						</div>
+					</div>
+					<div class="col-md-6 new-t">
+						<div class="new-text wow fadeInRight animated" data-wow-delay=".5s">
+							<h4>History</h4>
+							<p> For not missing any moment you lived before the JBrowser cares for you.Just go to the History Tabs and load the website you opened before..
+							</p>
+						</div>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 new-res">
+					<div class="col-md-6 new-i wow fadeInLeft animated" data-wow-delay=".5s">
+						<div class="new-image hovereffect">
+							<img src="./images/downloads.png" alt="image">
+						</div>
+					</div>
+					<div class="col-md-6 new-t">
+						<div class="new-text wow fadeInRight animated" data-wow-delay=".5s">
+							<h4>Bookmarks </h4>
+							<p>Many website covers the active topics.so Dont miss out just save the bookmarks for that web page and enjoy each and every time on the go.
+						</div>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+
+			  <div class="clearfix"> </div>
+			</div>
+
+			<div class="new-down">
+
+				<div class="col-md-6 new-res">
+					<div class="col-md-6 new-t">
+						<div class="new-text wow fadeInLeft animated" data-wow-delay=".5s">
+							<h4 >Themes</h4>
+							<p>JBrowser focuses on providing the best selected themes for your browser.so you can just select the best theme according to your mood.Themes are categorised only for you!</p>
+						</div>
+					</div>
+					<div class="col-md-6 new-i wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="new-image hovereffect">
+							<img src="./images/history.jpg" alt="image">
+						</div>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+
+				<div class="col-md-6 new-res">
+					<div class="col-md-6 new-t">
+						<div class="new-text wow fadeInLeft animated" data-wow-delay=".5s">
+							<h4  class="wow fadeInLeft animated" data-wow-delay=".5s">Downloads </h4>
+							<p class="wow fadeInLeft animated" data-wow-delay=".5s">JBrowser just optimised the content for you.you can download the content from the browser on one click away and check it on the Downloads tab</p>
+						</div>
+					</div>
+					<div class="col-md-6 new-i wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="new-image hovereffect">
+							<img src="./images/bookmarks.jpg" alt="image">
+						</div>
+					</div>
+				  <div class="clearfix"> </div>
+				</div>
+
+			  <div class="clearfix"> </div>
+			</div>
+
+		</div> <!-- content ends here -->
+
+	</div>
+  </div>
+</div> <!-- new arrivals ends here -->
+
+
+<div class="about" id="about">
+	<div class="container">
+		<div class="about-content wow fadeInRight animated" data-wow-delay=".2s">
+			<h3> About JBrowser </h3>
+			<p>JBrowser is an excellent application which is made to perform the best quality.It is made Mobile-Friendly so that you can even work on diffrent devices.It perform and delivers you the high Speed.So dont wait just download the app from the playstore now!!.</p>
+		</div>
+	</div>
+</div> <!--  about Ends here -->
+
+
+<div class="catalogue" id="catalogue">
+	<div class="container">
+		<div class="padding-catalogue">
+			<h3>Catalogue</h3>
+			<div class="sap_tabs">
+
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+
+					<ul>
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>At Glance</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Our-Team</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Contact-Developers</span></li>
+
+					</ul>
+
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">    <!-- ********** At-Glance **********  -->
+						<div class="facts">
+							<div class="chairs">
+
+								<div class="wrapper">
+									<ul class="stage clearfix">
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="./images/themes.png" alt="image"></div>
+													<div class="info">
+														<header>
+															<h4>Themes</h4>
+
+															<p>various themes are just categoried only for you.make a sensible vision to your browser.</p>
+														</header>
+													</div>
+											</div>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag">
+													<img src="./images/browsing.png" alt="image">
+												</div>
+												<div class="info">
+													<header>
+														<h4>Fast-Browsing</h4>
+
+														<p>Our JBrowser gives you the fast browsing experience ever.it opens the page 70% faster by caching the websites.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												  <div class="price-tag"><img src="./images/incognito.png" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>Incognito-Browsing</h4>
+
+														<p>Incognito browsing leads you to private browsing.it will not remember your history,cookis,passwords etc.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												  <div class="price-tag"><img src="./images/history.jpg" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>History</h4>
+
+														<p>JBrowser gives you the better experience of viewing your past history just by opening the history tab and open it again.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												  <div class="price-tag"><img src="./images/downloads.png" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>Downloads</h4>
+														<p>JBrowser gives you the better experience of downloading.all downloaded data can be viewed again through Downloads tab.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												  <div class="price-tag"><img src="./images/bookmarks.jpg" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>Bookmarks</h4>
+
+														<p>Any website you Visit.if you like the website Just Bookmark it.JBrowser can save the website for viewing later.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div><!-- /wraspanper -->
+							  <div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">			<!-- ********** Our-Teams **********  -->
+						<div class="facts">
+							<div class="sofa">
+
+								<div class="wrapper">
+									<ul class="stage clearfix">
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"> <img src="./images/parag.png" alt="image"></div>
+													<div class="info">
+														<header>
+															<h4>Parag Bhatt</h4>
+
+															<p>Parag is a technocrat with skills for managing projects in various Web Technologies.He work for development part in html,css,javascript.He holds a BTechdegree in Computer science, Technology.</p>
+														</header>
+													</div>
+											</div>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												<div class="price-tag"><img src="./images/shubham.jpg" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>Shubham Heda</h4>
+
+														<p>Shubham is an avid observer of digital culture and technology and have a wide experience of conducting Database Management and programming in heroku.He holds a BTechdegree in Computer science, Technology.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+
+										<li class="col-md-3 scene">
+											<div class="frontview" onclick="return true">
+												  <div class="price-tag"><img src="./images/shailesh.jpg" alt="image"></div>
+												<div class="info">
+													<header>
+														<h4>Shailesh Kumar</h4>
+
+														<p> Shailesh kumar specialized in the development of ios applications. he is working with various technology development. He holds a BTechdegree in Computer science, Technology.</p>
+													</header>
+												</div>
+											</div>
+										</li>
+
+																	</ul>
+								</div><!-- /wrapper -->
+							  <div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">		<!-- ********** Contact-Developers **********  -->
+
+					<br><p ><h3><pre style="color:blue;"> Here you can contact us anytime.we are here to help you 24*7. <br>Any query can be solved.we aim to provide you hasslefree <br>services.you can contact us by clicking on the button below<pre></h3><p>
+
+<form method='post'>
+  Name: <input type='text' name='name' id='name' /><br />
+
+  Email: <input type='text' name='email' id='email' /><br />
+
+  Website: <input type='text' name='website' id='website' /><br />
+
+  Comment:<br />
+  <textarea name='comment' id='comment'></textarea><br />
+
+  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+  <input type='submit' value='Submit' />
+</form>
+
+					</div>
+
+
+							<!-- catalogue Ends here -->
+
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="padding-contact">
+			<h3> Contact </h3>
+			<div class="col-md-3 address services wow fadeInLeft animated" data-wow-delay=".6s">
+				<h4>Address</h4>
+					<address>
+						Plot no. 314, Rajni Vihar Heerapura, Ajmer Road Jaipur,302024<br>
+						Contact- 9785637435 ; 8504924066 ; 9460251938
+					</address>
+			</div>
+
+			<div class="col-md-6 c-form wow fadeInUp animated" data-wow-delay=".2s">
+				<div class="register">
+					<form action="" method="post"> {% csrf_token %}
+                        {{ forms.name }}
+                        {{ forms.email }}
+                        <div class="message">
+                            {{ forms.message }}
+                        </div>
+
+						<div class="sign-up">
+							<input type="submit" value="Submit"/>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-3 quick wow fadeInRight animated" data-wow-delay=".6s">
+				<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#home" class="active scroll">Home</a></li>
+						<li><a href="#new" class="scroll">New</a></li>
+						<li><a href="#about" class="scroll">About Us</a></li>
+						<li><a href="#catalogue" class="scroll">Catalogue</a></li>
+					</ul>
+
+			</div>
+
+		  <div class="clearfix"> </div>
+		</div>
+
+			<!--start-copyright-->
+			<div class="copy-right">
+
+					<p>&copy; 2016 Jbrowser.  All Rights  Reserved | Design by <a href="http://jbrowser.com">Jteams</a></p>
+
+			</div>
+			<!--//end-copyright-->
+	</div>
+</div><!-- Contact Ends here -->
+	<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //Slide-To-Top JavaScript -->
+
+</body>
+</html>

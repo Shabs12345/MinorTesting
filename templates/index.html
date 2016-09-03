@@ -1,10 +1,22 @@
+{% load static %}
+{% if messages %}
+    {%  for msg in messages %}
+    <div class="alert alert-success" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>{{ name }}</strong> {{ msg }}
+    {%  endfor %}
+</div>
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Index Page</title>
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 <h1> index # Page</h1>
+<a href="{% url "login" %}" >Login</a>
 </body>
 </html>
